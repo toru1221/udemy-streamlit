@@ -1,7 +1,7 @@
 import streamlit as st
 import time
 
-st.title('Streamlit 入門')
+st.title('初めてのWebアプリ')
 
 st.write('プログレスバーの表示')
 'START!!'
@@ -10,7 +10,7 @@ latest_iteration = st.empty()
 bar = st.progress(0)
 
 for i in range(100):
-    latest_iteration.text(f'Iteration {i+1}')
+    latest_iteration.text(f'読み込み率 {i+1} %')
     bar.progress(i + 1)
     time.sleep(0.1)
 
